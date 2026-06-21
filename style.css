@@ -411,24 +411,49 @@ nav a:hover{
 .logo-area{
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
 }
 
-.instagram{
+.social-links{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.social-link{
   display: flex;
   align-items: center;
   gap: 8px;
 
-  color: rgba(255,255,255,.7);
+  padding: 8px 14px;
+
+  border-radius: 999px;
+
+  border: 1px solid rgba(255,255,255,.12);
+
+  color: rgba(255,255,255,.8);
   text-decoration: none;
 
-  font-size: .95rem;
+  font-size: .9rem;
 
   transition: .3s;
 }
 
-.instagram:hover{
+.social-link:hover{
   color: #7aa2ff;
+  border-color: #7aa2ff;
+  transform: translateY(-2px);
+}
+
+.future-link{
+  cursor: default;
+  opacity: .7;
+}
+
+.future-link:hover{
+  transform: none;
+  color: rgba(255,255,255,.8);
+  border-color: rgba(255,255,255,.12);
 }
 
 .project-link{
