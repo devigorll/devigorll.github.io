@@ -72,6 +72,51 @@ nav a:hover{
   opacity: .7;
 }
 
+.project-buttons{
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.project-buttons a{
+    flex: 1;                 /* Ambos terão exatamente a mesma largura */
+    text-align: center;
+}
+
+.description-btn{
+    /* Mesmo tamanho do botão Ver Repositório */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 12px 20px;
+    margin-top: 25px;
+
+    /* Estilo igual ao botão Contato */
+    background: transparent !important;
+    border: 1px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(10px);
+
+    color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+
+    box-shadow: none !important;
+
+    transition: .3s;
+}
+
+.description-btn:hover{
+    background: rgba(255,255,255,.05) !important;
+    border-color: rgba(255,255,255,.3);
+    transform: translateY(-3px);
+
+    /* Remove o brilho azul do .project-link */
+    box-shadow: none !important;
+}
+
+
 .hero-content{
   position: relative;
   z-index: 10;
