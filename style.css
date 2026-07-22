@@ -305,26 +305,42 @@ nav a:hover{
 /* ========================================= */
 
 .projects{
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-  gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
 }
 
 .project-card{
-  background: linear-gradient(
-    180deg,
-    #10131b,
-    #090909
-  );
+    background: linear-gradient(
+        180deg,
+        #10131b,
+        #090909
+    );
 
-  border: 1px solid rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 24px;
+    padding: 35px;
 
-  border-radius: 24px;
-  padding: 35px;
+    transition: .3s;
+    cursor: pointer;
 
-  transition: .3s;
+    /* NOVO */
+    display: flex;
+    flex-direction: column;
+}
 
-  cursor: pointer;
+.project-card p{
+    color: rgba(255,255,255,.7);
+    line-height: 1.7;
+
+    /* Faz o texto ocupar o espaço disponível */
+    flex-grow: 1;
+}
+
+.project-buttons{
+    display: flex;
+    gap: 12px;
+    margin-top: auto;
 }
 
 .project-card:hover{
@@ -418,6 +434,11 @@ nav a:hover{
     display: none;
   }
 
+  /* Cards */
+  .projects{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
 }
 
 @media(max-width: 600px){
@@ -428,6 +449,11 @@ nav a:hover{
 
   .section-title h2{
     font-size: 2.2rem;
+  }
+
+  /* Cards */
+  .projects{
+    grid-template-columns: 1fr;
   }
 
 }
