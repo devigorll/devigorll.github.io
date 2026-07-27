@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "People Analytics - Análise Atrito",
             badge: "Data Science",
             description: "Este projeto aplica técnicas avançadas de Ciência de Dados e Estatística para antecipar a evasão de talentos (turnover/atrito) e otimizar o planejamento de sucessão nas empresas.",
-            githubUrl: "https://github.com/devigorll",
+            githubUrl: "https://github.com/devigorll/analise_atrito",
             images: [
                 "assets/images/people_analytcs/codigo.jpg",
                 "assets/images/people_analytcs/dashboard.jpg",
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Análise Monitoramento Logística",
             badge: "Data Science",
             description: "Projeto focado na estruturação e monitoramento de indicadores logísticos para análise de dados operacionais e de transporte.",
-            githubUrl: "https://github.com/devigorll",
+            githubUrl: "https://github.com/devigorll/analise_monitoramento",
             images: [
                 "assets/images/analise_monitoramento/join_vw_envio.png",
                 "assets/images/analise_monitoramento/financeiro.png",
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Help Desk",
             badge: "Suporte & TI",
             description: "O Help Desk é um sistema desenvolvido para centralizar e gerenciar chamados de suporte técnico, proporcionando maior organização e acompanhamento em tempo real.",
-            githubUrl: "https://github.com/devigorll",
+            githubUrl: "https://github.com/devigorll/help_desk",
             images: [
                 "assets/images/projects/helpdesk-1.png",
                 "assets/images/projects/helpdesk-2.png"
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Smart Stock",
             badge: "Modelos Preditivos",
             description: "O Smart Stock utiliza Ciência de Dados e modelos preditivos para automatizar o controle de inventário, antecipando demandas e otimizando níveis de estoque.",
-            githubUrl: "https://github.com/devigorll",
+            githubUrl: "https://github.com/devigorll/smart_stock",
             images: [
                 "assets/images/projects/smart-stock-1.png",
                 "assets/images/projects/smart-stock-2.png"
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Análise Brasileirão 2024",
             badge: "Estrutura de Dados",
             description: "Projeto desenvolvido como trabalho final para a disciplina de Estrutura de Dados no 2º semestre do curso de Ciência de Dados na FATEC Jundiaí.",
-            githubUrl: "https://github.com/devigorll",
+            githubUrl: "https://github.com/devigorll/analise_brasileirao",
             images: [
                 "assets/images/projects/brasileirao-1.png",
                 "assets/images/projects/brasileirao-2.png"
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Estudos Ciência de Dados",
             badge: "Repositório",
             description: "Repositório dedicado a estudos, projetos e desafios de Ciência de Dados utilizando Python, Pandas, Matplotlib, Seaborn e outras bibliotecas.",
-            githubUrl: "https://github.com/devigorll",
+            githubUrl: "https://github.com/devigorll/cursocienciadedados",
             images: [
                 "assets/images/projects/estudos-1.png",
                 "assets/images/projects/estudos-2.png"
