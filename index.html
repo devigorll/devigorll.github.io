@@ -1,428 +1,1265 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Igor Cruz | Portfólio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <link rel="stylesheet" href="style.css" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Igor Cruz | Portfólio</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <meta name="description"
+          content="Portfólio de Igor Cruz - Auxiliar de TI e estudante de Ciência de Dados.">
 
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-  >
+    <meta name="keywords"
+          content="Python, SQL Server, Power BI, Ciência de Dados, Desenvolvedor">
+
+    <meta name="author"
+          content="Igor Cruz">
+
+    <link rel="icon"
+          href="assets/icons/favicon.png">
+
+    <!-- Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- ICONS -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+
 </head>
-
 
 <body>
 
-  <section class="hero">
+    <!--==========================
+        CURSOR
+    ===========================-->
 
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>
+    <div class="cursor"></div>
 
-    <header class="navbar">
+    <div class="cursor-dot"></div>
 
-    <div class="logo-area">
+    <!--==========================
+        LOADER
+    ===========================-->
 
-      <h2 class="logo">IGOR CRUZ</h2>
+    <div id="loader">
 
-      <div class="social-links">
+        <div class="loader-logo">
 
-        <a
-          href="https://instagram.com/i.cruzll"
-          target="_blank"
-          class="social-link"
-        >
-          <i class="fa-brands fa-instagram"></i>
-          Instagram
-        </a>
+            <span>I</span>
 
-        <a
-          href="https://www.linkedin.com/in/igorcruzll"
-          target="_blank"
-          class="social-link"
-        >
-          <i class="fa-brands fa-linkedin"></i>
-          LinkedIn
-        </a>
+        </div>
 
-        <a
-          href="https://github.com/devigorll"
-          target="_blank"
-          class="social-link"
-        >
-          <i class="fa-brands fa-github"></i>
-          GitHub
-        </a>
-
-          <a
-          href="https://www.youtube.com/@DataVerse123-u8v"
-          target="_blank"
-          class="social-link"
-        >
-          <i class="fa-brands fa-youtube"></i>
-          YouTube
-        </a>
-
-        <a
-          href="../arquivos/curriculo_igor_cruz.pdf"
-          download
-          class="social-link"
-        >
-          <i class="fa-solid fa-file-pdf"></i>
-          Currículo
-        </a>
-
-      </div>
+        <h2>Carregando...</h2>
 
     </div>
 
-      <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#skills">Skills</a>
-        <a href="#contato">Contato</a>
-      </nav>
+    <!--==========================
+        SCROLL PROGRESS
+    ===========================-->
+
+    <div id="progress-bar"></div>
+
+    <!--==========================
+        BACKGROUND
+    ===========================-->
+
+    <div class="background">
+
+        <div class="gradient one"></div>
+
+        <div class="gradient two"></div>
+
+        <canvas id="particles"></canvas>
+
+    </div>
+
+    <!--==========================
+        HEADER
+    ===========================-->
+
+    <header id="header">
+
+        <div class="container">
+
+            <a href="#home"
+               class="logo">
+
+                Igor<span>.</span>
+
+            </a>
+
+            <nav id="nav">
+
+                <ul>
+
+                    <li><a href="#home">Home</a></li>
+
+                    <li><a href="#about">Sobre</a></li>
+
+                    <li><a href="#skills">Tecnologias</a></li>
+
+                    <li><a href="#projects">Projetos</a></li>
+
+                    <li><a href="#experience">Experiência</a></li>
+
+                    <li><a href="#contact">Contato</a></li>
+
+                </ul>
+
+            </nav>
+
+            <div class="header-buttons">
+
+                <button id="theme-toggle">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+                <button id="menu-btn">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+            </div>
+
+        </div>
 
     </header>
 
-    <div class="hero-content">
+    <!--==========================
+        HERO
+    ===========================-->
 
-      <div class="hero-text">
+    <section id="home">
 
-        <span class="tag">CIÊNCIA DE DADOS • PYTHON • DASHBOARDS</span>
+        <div class="container hero-container">
 
-        <h1>
-          Olá, eu sou
-          <span>Igor Cruz</span>
-        </h1>
+            <div class="hero-left">
 
-        <p>
-          Estudante de Ciência de Dados na FATEC Jundiaí.
-          Desenvolvo dashboards, aplicações web
-          e projetos voltados para análise de dados.
-        </p>
+                <span class="tag">
 
-        <div class="buttons">
+                    Bem-vindo ao meu Portfólio
 
-          <a href="#projetos" class="btn primary">
-            Ver Projetos
-          </a>
+                </span>
 
-          <a href="#contato" class="btn secondary">
-            Contato
-          </a>
+                <h1>
 
-        </div>
+                    Olá,
 
-      </div>
+                    <br>
 
-      <div class="hero-image">
-        <img src="../img/a2.jpeg" alt="Foto de perfil">
-      </div>
+                    Eu sou
 
-    </div>
+                    <span>
 
-    <div class="fade-bottom"></div>
+                        Igor Cruz
 
-  </section>
+                    </span>
 
-  <section class="section dark" id="sobre">
+                </h1>
 
-    <div class="section-title">
-      <span>01</span>
-      <h2>Sobre Mim</h2>
-    </div>
+                <h2>
 
-    <div class="about-grid">
+                    <span id="typing"></span>
 
-      <div class="card">
+                </h2>
 
-        <h3>Quem sou eu</h3>
+                <p>
 
-        <p>
-          Meu nome é Igor Cruz, tenho 20 anos de idade, sou profissional de TI na área de suporte técnico e estudante de Ciência de Dados na FATEC Jundiaí. Sou apaixonado por tecnologia, dados e inovação, e estou sempre buscando aprender e crescer na área de análise de dados.
-        </p>
+                    Sou estudante de Ciência de Dados pela FATEC,
+                    apaixonado por tecnologia, automação, desenvolvimento
+                    web, Python, SQL Server e Power BI.
 
-      </div>
+                    Meu objetivo é construir soluções inteligentes
+                    utilizando dados para resolver problemas reais.
 
-      <div class="card">
+                </p>
 
-        <h3>Objetivos</h3>
+                <div class="hero-buttons">
 
-        <p>
-          Atualmente, meu objetivo é me aprofundar em técnicas de análise de dados, visualização e machine learning, além de desenvolver projetos práticos que possam agregar valor a empresas e organizações. Estou aberto a oportunidades de estágio, freelas e colaborações na área de Ciência de Dados.
-        </p>
+                    <a href="#projects"
+                       class="btn primary">
 
-      </div>
+                        Ver Projetos
 
-    </div>
+                    </a>
 
-  </section>
+                    <a href="assets/pdf/curriculo_igor_cruz.pdf"
+                       download
+                       class="btn secondary">
 
-  <section class="section dark" id="projetos">
+                        Download CV
 
-    <div class="section-title">
-      <span>02</span>
-      <h2>Estudos e Projetos</h2>
-    </div>
+                    </a>
 
+                </div>
 
+                <div class="socials">
 
+                    <a href="https://github.com/devigorll"
+                       target="_blank">
 
+                        <i class="fab fa-github"></i>
 
+                    </a>
 
+                    <a href="https://www.linkedin.com/in/igorcruzll"
+                       target="_blank">
 
-    
-    <div class="projects">
+                        <i class="fab fa-linkedin"></i>
 
-      <div class="project-card">
+                    </a>
 
-        <h3>Análise Atrito</h3>
+                    <a href="https://instagram.com/i.cruzll"
+                       target="_blank">
 
-        <p>
-          Este projeto aplica técnicas avançadas de Ciência de Dados e Estatística para antecipar a evasão de talentos (turnover/atrito) e otimizar o planejamento de sucessão nas empresas
-        </p>
+                        <i class="fab fa-instagram"></i>
 
-        <div class="project-buttons">
+                    </a>
 
-            <a href="https://github.com/devigorll/analise_atrito"
-              target="_blank"
-              class="project-link">
-                Ver Repositório
-            </a>
+                    <a href="https://www.youtube.com/@DataVerse123-u8v"
+                       target="_blank">
 
-            <a href="descricao.html"
-              class="project-link description-btn">
-                Ver Descrição
-            </a>
+                        <i class="fab fa-youtube"></i>
 
-        </div>
+                    </a>
 
-      </div>
+                </div>
 
+            </div>
 
+            <div class="hero-right">
 
+                <div class="photo-wrapper">
 
+                    <div class="photo-border"></div>
 
+                    <img src="assets/images/perfil/foto01.jpeg"
+                         alt="Igor Cruz">
 
+                    <div class="floating-card card1">
 
+                        <i class="fa-brands fa-python"></i>
 
-      <div class="project-card">
+                        Python
 
-        <h3>Análise Monitoramento Logística</h3>
+                    </div>
 
-        <p>
-          Projeto futuro em andamento - criando a estrutura do projeto |
-          Projeto futuro em andamento - criando a estrutura do projeto 
-        </p>
+                    <div class="floating-card card2">
 
-        <div class="project-buttons">
+                        <i class="fa-solid fa-database"></i>
 
-            <a href="https://github.com/devigorll/analise_monitoramento"
-              target="_blank"
-              class="project-link">
-                Ver Repositório
-            </a>
+                        SQL Server
 
-            <a href="descricao.html"
-              class="project-link description-btn">
-                Ver Descrição
-            </a>
+                    </div>
+
+                    <div class="floating-card card3">
+
+                        <i class="fa-solid fa-chart-column"></i>
+
+                        Power BI
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 
-      </div>
+        <a href="#about"
+           class="scroll-indicator">
 
+            <span></span>
 
+        </a>
 
+    </section>
 
+<!--==========================================
+    SOBRE MIM
+===========================================-->
 
+<section id="about">
 
-        <div class="project-card">
+    <div class="container">
 
-          <h3>Help Desk</h3>
+        <div class="section-title reveal">
 
-          <p>
-            O Help Desk é um sistema desenvolvido para centralizar e gerenciar chamados de suporte técnico, proporcionando maior organização, agilidade no atendimento e acompanhamento em tempo real das solicitações dos usuários.
-          </p>
+            <span>Quem sou eu</span>
 
-          <div class="project-buttons">
+            <h2>Sobre Mim</h2>
 
-              <a href="http://github.com/devigorll/help_desk"
-                target="_blank"
-                class="project-link">
-                  Ver Repositório
-              </a>
-
-              <a href="descricao.html"
-                class="project-link description-btn">
-                  Ver Descrição
-              </a>
-
-          </div>
-
-      </div>
-
-
-
-
-
-
-
-
-      <div class="project-card">
-
-        <h3>Smart Stock</h3>
-
-        <p>
-          O Smart Stock utiliza Ciência de Dados avançada e modelos preditivos para automatizar o controle de inventário, antecipando demandas de mercado e otimizando os níveis de estoque em tempo real nas empresas.
-        </p>
-
-        <div class="project-buttons">
-
-            <a href="https://github.com/devigorll/smart_stock"
-              target="_blank"
-              class="project-link">
-                Ver Repositório
-            </a>
-
-            <a href="descricao.html"
-              class="project-link description-btn">
-                Ver Descrição
-            </a>
+            <p>
+                Transformando ideias em soluções através da tecnologia.
+            </p>
 
         </div>
 
-      </div>
+        <div class="about-container">
 
+            <div class="about-image reveal-left">
 
+                <div class="image-card">
 
+                    <img src="assets/images/perfil/foto02.jpeg"
+                        alt="Igor Cruz">
 
+                </div>
 
+            </div>
 
-      <div class="project-card">
+            <div class="about-content reveal-right">
 
-        <h3>Análise Brasileirão 2024</h3>
+                <h3>
 
-        <p>
-          Este projeto foi desenvolvido como trabalho final para a disciplina de Estrutura de Dados, no 2º semestre do curso de Ciência de Dados na FATEC Jundiaí. 
-          
-          
-        </p>
+                    Auxiliar de TI
+                    <br>
+                    &
+                    <br>
+                    Estudante de Ciência de Dados
 
-        <div class="project-buttons">
+                </h3>
 
-            <a href="https://github.com/devigorll/analise_brasileirao"
-              target="_blank"
-              class="project-link">
-                Ver Repositório
-            </a>
+                <p>
 
-            <a href="descricao.html"
-              class="project-link description-btn">
-                Ver Descrição
-            </a>
+                    Minha trajetória na tecnologia começou atuando com suporte
+                    corporativo, onde desenvolvi habilidades em infraestrutura,
+                    Active Directory, Microsoft 365, TOTVS e atendimento aos usuários.
+
+                </p>
+
+                <p>
+
+                    Atualmente curso Ciência de Dados pela FATEC de Jundiaí,
+                    buscando migrar minha carreira para a área de Dados,
+                    utilizando Python, SQL Server, Power BI e Inteligência de Dados
+                    para desenvolver soluções modernas.
+
+                </p>
+
+                <p>
+                    Nas horas vagas, sou apaixonado por futebol e mantenho o hábito de praticar o esporte todos os fins de semana.
+                </p>
+
+                <div class="about-info">
+
+                    <div>
+
+                        <strong>Nome</strong>
+
+                        <span>Igor Cruz</span>
+
+                    </div>
+
+                    <div>
+
+                        <strong>Idade</strong>
+
+                        <span>20 anos</span>
+
+                    </div>
+
+                    <div>
+
+                        <strong>Cidade</strong>
+
+                        <span>Barra Funda - SP</span>
+
+                    </div>
+
+                    <div>
+
+                        <strong>Objetivo</strong>
+
+                        <span>Data Science</span>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 
-      </div>
+    </div>
 
+</section>
 
+<!--==========================================
+ESTATÍSTICAS
+===========================================-->
 
+<section id="stats">
 
+    <div class="container">
 
+        <div class="stats-grid">
 
+            <div class="stat-card reveal">
 
-      <div class="project-card">
+                <h3 class="counter" data-target="10">
 
-        <h3>Estudos Ciência de Dados</h3>
+                    0
 
-        <p>
-          Repositório dedicado a estudos, projetos e desafios de Ciência de Dados
-          utilizando Python, Pandas, Matplotlib e Seaborn e outras bibliotecas.
-        </p>
+                </h3>
 
-        <div class="project-buttons">
+                <p>
 
-            <a href="https://github.com/devigorll/cursocienciadedados"
-              target="_blank"
-              class="project-link">
-                Ver Repositório
-            </a>
+                    Tecnologias
 
-            <a href="descricao.html"
-              class="project-link description-btn">
-                Ver Descrição
-            </a>
+                </p>
+
+            </div>
+
+            <div class="stat-card reveal">
+
+                <h3 class="counter"
+                    data-target="5">
+
+                    0
+
+                </h3>
+
+                <p>
+
+                    Projetos
+
+                </p>
+
+            </div>
+
+            <div class="stat-card reveal">
+
+                <h3 class="counter"
+                    data-target="2">
+
+                    0
+
+                </h3>
+
+                <p>
+
+                    Anos em TI
+
+                </p>
+
+            </div>
+
+            <div class="stat-card reveal">
+
+                <h3>
+
+                    100%
+
+                </h3>
+
+                <p>
+
+                    Dedicação
+
+                </p>
+
+            </div>
 
         </div>
 
-      </div>
+    </div>
 
+</section>
 
+<!--==========================================
+TECNOLOGIAS
+===========================================-->
 
+<section id="skills">
 
+    <div class="container">
 
+        <div class="section-title reveal">
 
+            <span>Stack</span>
 
+            <h2>Tecnologias</h2>
 
-      
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skill-card reveal">
+
+                <i class="fa-brands fa-python"></i>
+
+                <h3>Python</h3>
+
+            </div>
+
+            <div class="skill-card reveal">
+
+                <i class="fa-solid fa-database"></i>
+
+                <h3>SQL Server</h3>
+
+            </div>
+
+            <div class="skill-card reveal">
+
+                <i class="fa-solid fa-chart-column"></i>
+
+                <h3>Power BI</h3>
+
+            </div>
+
+            <div class="skill-card reveal">
+
+                <i class="fa-brands fa-html5"></i>
+
+                <h3>HTML5</h3>
+
+            </div>
+
+            <div class="skill-card reveal">
+
+                <i class="fa-brands fa-css3-alt"></i>
+
+                <h3>CSS3</h3>
+
+            </div>
+
+            <!--
+            <div class="skill-card reveal">
+
+                <i class="fa-brands fa-js"></i>
+
+                <h3>JavaScript</h3>
+
+            </div>
+            -->
+
+            <div class="skill-card reveal">
+
+                <i class="fa-brands fa-github"></i>
+
+                <h3>GitHub</h3>
+
+            </div>
+
+            <div class="skill-card reveal">
+
+                <i class="fa-solid fa-chart-pie"></i>
+
+                <h3>Tableau</h3>
+
+            </div>
+
+            <div class="skill-card reveal">
+
+                <i class="fa-solid fa-file-excel"></i>
+
+                <h3>Excel</h3>
+
+            </div>
+
+            <!--
+            <div class="skill-card reveal">
+
+                <i class="fa-solid fa-cloud"></i>
+
+                <h3>AWS</h3>
+
+            </div>
+            -->
+
+            <div class="skill-card reveal">
+
+                <i class="fa-solid fa-server"></i>
+
+                <h3>Microsoft 365</h3>
+
+            </div>
+
+            <div class="skill-card reveal">
+
+                <i class="fa-solid fa-network-wired"></i>
+
+                <h3>Active Directory</h3>
+
+            </div>
+
+        </div>
 
     </div>
 
-  </section>
+</section>
 
-  <section class="section dark" id="skills">
+<!--==========================================
+TIMELINE
+===========================================-->
 
-    <div class="section-title">
-      <span>03</span>
-      <h2>Skills</h2>
+<section id="timeline">
+
+    <div class="container">
+
+        <div class="section-title reveal">
+
+            <span>Minha Jornada</span>
+
+            <h2>Timeline</h2>
+
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item reveal-left">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span>2023</span>
+
+                    <h3>ETEC</h3>
+
+                    <p>
+
+                        Início da formação em Desenvolvimento de Sistemas.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item reveal-right">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span>2024</span>
+
+                    <h3>Jovem Aprendiz</h3>
+
+                    <p>
+
+                        Início da carreira em Tecnologia da Informação.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item reveal-left">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span>2025</span>
+
+                    <h3>FATEC</h3>
+
+                    <p>
+
+                        Início da graduação em Ciência de Dados.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item reveal-right">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span>2026</span>
+
+                    <h3>Auxiliar de TI</h3>
+
+                    <p>
+
+                        Atuação com infraestrutura,
+                        Power BI,
+                        SQL,
+                        Active Directory,
+                        Microsoft 365
+                        e suporte corporativo.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item reveal-left">
+
+                <div class="timeline-dot future"></div>
+
+                <div class="timeline-content">
+
+                    <span>Próximo passo</span>
+
+                    <h3>Data Scientist</h3>
+
+                    <p>
+
+                        Atuar profissionalmente
+                        com Ciência de Dados
+                        desenvolvendo soluções inteligentes.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
-    <div class="skills">
+</section>
 
-      <div class="skill">Python</div>
-      <div class="skill">Pandas</div>
-      <div class="skill">Power BI</div>
-      <div class="skill">Tableau</div>
-      <div class="skill">Streamlit</div>
-      <div class="skill">HTML</div>
-      <div class="skill">CSS</div>
-      <div class="skill">Excel Avançado</div>
+<!--==========================================
+SERVIÇOS
+===========================================-->
+
+<section id="services">
+
+    <div class="container">
+
+        <div class="section-title reveal">
+
+            <span>O que faço</span>
+
+            <h2>Serviços</h2>
+
+        </div>
+
+        <div class="services-grid">
+
+            <div class="service-card reveal">
+
+                <i class="fa-solid fa-code"></i>
+
+                <h3>Desenvolvimento Web</h3>
+
+            </div>
+
+            <div class="service-card reveal">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <h3>Dashboards Power BI</h3>
+
+            </div>
+
+            <div class="service-card reveal">
+
+                <i class="fa-solid fa-database"></i>
+
+                <h3>Banco de Dados</h3>
+
+            </div>
+
+            <div class="service-card reveal">
+
+                <i class="fa-solid fa-robot"></i>
+
+                <h3>Automações em Python</h3>
+
+            </div>
+
+        </div>
 
     </div>
 
-  </section>
+</section>
 
-  <section class="section dark" id="contato">
 
-    <div class="section-title">
-      <span>04</span>
-      <h2>Contato</h2>
+<!--==========================================
+PROJETOS
+===========================================-->
+
+<section id="projects">
+
+    <div class="container">
+
+        <div class="section-title reveal">
+
+            <span>Portfólio</span>
+
+            <h2>Projetos</h2>
+
+            <p>
+                Alguns dos projetos que desenvolvi.
+            </p>
+
+        </div>
+
+        <!-- Os projetos serão inseridos dinamicamente via js/github.js -->
+        <div id="projects-container">
+
+        </div>
+
     </div>
 
-    <div class="contact-card">
+</section>
 
-      <p>
-        Entre em contato para projetos, freelas ou networking.
-      </p>
+<!--==========================================
+EXPERIÊNCIA
+===========================================-->
 
-      <a href="mailto:igorcruzlsls@email.com" class="btn primary">
-        Enviar Email
-      </a>
+<section id="experience">
+
+    <div class="container">
+
+        <div class="section-title reveal">
+
+            <span>Carreira</span>
+
+            <h2>Experiência</h2>
+
+        </div>
+
+        <div class="experience-grid">
+
+            <div class="experience-card reveal">
+
+                <div class="experience-icon">
+
+                    <i class="fa-solid fa-briefcase"></i>
+
+                </div>
+
+                <div class="experience-content">
+
+                    <span>2024 • 2026</span>
+
+                    <h3>Auxiliar de T.I</h3>
+
+                    <h4>JOTAEME FITAFER</h4>
+
+                    <p>
+
+                        Atuação em suporte técnico,
+                        Microsoft 365,
+                        Active Directory,
+                        TOTVS Protheus,
+                        Gatefy,
+                        infraestrutura,
+                        Power BI
+                        e administração de usuários.
+
+                    </p>
+
+                </div>
+
+                <br>
+
+                <div class="experience-content">
+
+                    <span>2026 • 2026</span>
+
+                    <h3>Professor de Pacote Oficce</h3>
+
+                    <h4>Microlins</h4>
+
+                    <p>
+
+                        Aulas de Excel básico ao avançado,
+                        Softwares do Pacote Office,
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
 
-  </section>
+</section>
+
+<!--==========================================
+FORMAÇÃO
+===========================================-->
+
+<section id="education">
+
+    <div class="container">
+
+        <div class="section-title reveal">
+
+            <span>Educação</span>
+
+            <h2>Formação Acadêmica</h2>
+
+        </div>
+
+        <div class="education-grid">
+
+            <div class="education-card reveal">
+
+                <i class="fa-solid fa-graduation-cap"></i>
+
+                <h3>FATEC Jundiaí</h3>
+
+                <p>
+
+                    Ciência de Dados
+
+                </p>
+
+            </div>
+
+            <div class="education-card reveal">
+
+                <i class="fa-solid fa-laptop-code"></i>
+
+                <h3>ETEC</h3>
+
+                <p>
+
+                    Desenvolvimento de Sistemas
+
+                </p>
+
+            </div>
+
+            <div class="education-card reveal">
+
+                <i class="fa-solid fa-certificate"></i>
+
+                <h3>SENAI</h3>
+
+                <p>
+
+                    Python para Data Science
+
+                </p>
+
+            </div>
+
+            <div class="education-card reveal">
+
+                <i class="fa-solid fa-file-excel"></i>
+
+                <h3>SENAC</h3>
+
+                <p>
+
+                    Excel Avançado
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==========================================
+CERTIFICADOS
+===========================================-->
+
+<section id="certificates">
+
+    <div class="container">
+
+        <div class="section-title reveal">
+
+            <span>Especializações</span>
+
+            <h2>Cursos & Certificados</h2>
+
+        </div>
+
+        <div class="certificate-grid">
+
+            <div class="certificate-card reveal">
+
+                <i class="fa-solid fa-award"></i>
+
+                <h3>Power BI</h3>
+
+                <span>Udemy</span>
+
+            </div>
+
+            <div class="certificate-card reveal">
+
+                <i class="fa-solid fa-award"></i>
+
+                <h3>SQL</h3>
+
+                <span>Udemy</span>
+
+            </div>
+
+            <div class="certificate-card reveal">
+
+                <i class="fa-solid fa-award"></i>
+
+                <h3>Tableau</h3>
+
+                <span>Udemy</span>
+
+            </div>
+
+            <div class="certificate-card reveal">
+
+                <i class="fa-solid fa-award"></i>
+
+                <h3>AWS</h3>
+
+                <span>Em andamento</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==========================================
+CONTATO
+===========================================-->
+
+<section id="contact">
+
+    <div class="container">
+
+        <div class="section-title reveal">
+
+            <span>Vamos conversar?</span>
+
+            <h2>Contato</h2>
+
+        </div>
+
+        <div class="contact-wrapper">
+
+            <div class="contact-left reveal-left">
+
+                <h3>
+
+                    Gostou do meu trabalho?
+
+                </h3>
+
+                <p>
+
+                    Estou sempre aberto para novos desafios,
+                    oportunidades e projetos.
+
+                </p>
+
+                <div class="contact-links">
+
+                    <a href="mailto:igorcruzlsls@gmail.com">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        Email
+
+                    </a>
+
+                    <a href="https://github.com/devigorll"
+                       target="_blank">
+
+                        <i class="fa-brands fa-github"></i>
+
+                        GitHub
+
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/igorcruzll"
+                       target="_blank">
+
+                        <i class="fa-brands fa-linkedin"></i>
+
+                        LinkedIn
+
+                    </a>
+
+                    <a href="https://instagram.com/i.cruzll"
+                       target="_blank">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                        Instagram
+
+                    </a>
+
+                    <a href="https://www.youtube.com/@DataVerse123-u8v"
+                       target="_blank">
+
+                        <i class="fa-brands fa-youtube"></i>
+
+                        YouTube
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="contact-right reveal-right">
+
+                <form id="contact-form">
+
+                    <input
+                        type="text"
+                        placeholder="Seu nome">
+
+                    <input
+                        type="email"
+                        placeholder="Seu e-mail">
+
+                    <textarea
+                        placeholder="Sua mensagem"></textarea>
+
+                    <button
+                        class="btn primary">
+
+                        Enviar Mensagem
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==========================================
+BOTÃO TOPO
+===========================================-->
+
+<button id="back-to-top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<!--==========================================
+FOOTER
+===========================================-->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-content">
+
+            <h2>
+
+                Igor<span>.</span>
+
+            </h2>
+
+            <p>
+
+                Desenvolvido com ❤️ utilizando HTML, CSS e JavaScript.
+
+            </p>
+
+            <div class="footer-socials">
+
+                <a href="https://github.com/devigorll"
+                   target="_blank">
+
+                    <i class="fab fa-github"></i>
+
+                </a>
+
+                <a href="https://linkedin.com/in/igorcruzll"
+                   target="_blank">
+
+                    <i class="fab fa-linkedin"></i>
+
+                </a>
+
+                <a href="https://instagram.com/i.cruzll"
+                   target="_blank">
+
+                    <i class="fab fa-instagram"></i>
+
+                </a>
+
+                <a href="https://www.youtube.com/@DataVerse123-u8v"
+                   target="_blank">
+
+                    <i class="fab fa-youtube"></i>
+
+                </a>
+
+            </div>
+
+            <small>
+
+                © 2026 Igor Cruz.
+                Todos os direitos reservados.
+
+            </small>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!--==========================================
+JAVASCRIPT
+===========================================-->
+
+<script src="js/main.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/typing.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/loader.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/github.js"></script>
+<script src="js/animations.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,291 @@
+/* ==========================================
+   PORTFÓLIO - IGOR CRUZ
+   reset.css
+   ========================================== */
+
+/* ---------- RESET GLOBAL ---------- */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ---------- HTML ---------- */
+
+html{
+
+    scroll-behavior:smooth;
+
+    -webkit-font-smoothing:antialiased;
+
+    text-rendering:optimizeLegibility;
+
+}
+
+/* ---------- BODY ---------- */
+
+body{
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+    font-family:var(--font-primary);
+
+    background:var(--bg-color);
+
+    color:var(--text-color);
+
+    line-height:1.6;
+
+}
+
+/* ---------- IMAGENS ---------- */
+
+img,
+picture{
+
+    display:block;
+
+    max-width:100%;
+
+    user-select:none;
+
+    object-fit:cover;
+
+}
+
+/* ---------- VÍDEOS ---------- */
+
+video{
+
+    display:block;
+
+    width:100%;
+
+}
+
+/* ---------- LINKS ---------- */
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+    transition:var(--transition);
+
+}
+
+/* ---------- LISTAS ---------- */
+
+ul,
+ol{
+
+    list-style:none;
+
+}
+
+/* ---------- BOTÕES ---------- */
+
+button{
+
+    border:none;
+
+    outline:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    font:inherit;
+
+}
+
+/* ---------- INPUTS ---------- */
+
+input,
+textarea,
+select{
+
+    border:none;
+
+    outline:none;
+
+    font:inherit;
+
+    background:none;
+
+    color:inherit;
+
+}
+
+/* ---------- TEXTAREA ---------- */
+
+textarea{
+
+    resize:none;
+
+}
+
+/* ---------- TABELAS ---------- */
+
+table{
+
+    border-collapse:collapse;
+
+    border-spacing:0;
+
+}
+
+/* ---------- SVG ---------- */
+
+svg{
+
+    display:block;
+
+}
+
+/* ---------- IFRAMES ---------- */
+
+iframe{
+
+    border:0;
+
+}
+
+/* ---------- SECTIONS ---------- */
+
+section{
+
+    position:relative;
+
+    width:100%;
+
+    padding:120px 0;
+
+}
+
+/* ---------- CONTAINER ---------- */
+
+.container{
+
+    width:min(92%, var(--container));
+
+    margin-inline:auto;
+
+}
+
+/* ---------- TÍTULOS ---------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    font-family:var(--font-title);
+
+    line-height:1.1;
+
+    font-weight:700;
+
+}
+
+/* ---------- PARÁGRAFOS ---------- */
+
+p{
+
+    color:var(--text-secondary);
+
+}
+
+/* ---------- SELEÇÃO ---------- */
+
+::selection{
+
+    background:var(--color-primary);
+
+    color:#fff;
+
+}
+
+/* ---------- SCROLLBAR ---------- */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:var(--bg-color);
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    border-radius:999px;
+
+    background:var(--gradient-primary);
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--color-primary);
+
+}
+
+/* ---------- FOCUS ---------- */
+
+:focus-visible{
+
+    outline:2px solid var(--color-primary);
+
+    outline-offset:4px;
+
+}
+
+/* ---------- UTILITÁRIOS ---------- */
+
+.hidden{
+
+    display:none !important;
+
+}
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.flex{
+
+    display:flex;
+
+}
+
+.grid{
+
+    display:grid;
+
+}
+
+/* ---------- RESPONSIVIDADE ---------- */
+
+@media(max-width:768px){
+
+    section{
+
+        padding:90px 0;
+
+    }
+
+}

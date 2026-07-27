@@ -1,0 +1,230 @@
+/*==================================================
+CARDS DE PROJETOS MINIMALISTAS (1 POR LINHA / HORIZONTAL)
+==================================================*/
+
+#projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    max-width: 1000px;
+    margin: 2rem auto 0 auto;
+}
+
+.project-card {
+    background: var(--card-bg, rgba(255, 255, 255, 0.03));
+    border: 1px solid var(--glass-border, rgba(0, 0, 0, 0.08));
+    backdrop-filter: blur(12px);
+    border-radius: 24px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    align-items: stretch;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-primary);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* CARROSSEL DE IMAGENS (LADO ESQUERDO) */
+.project-carousel {
+    position: relative;
+    width: 100%;
+    min-height: 320px;
+    height: 100%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.04);
+}
+
+.carousel-track {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+/* Botões do Carrossel */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--card-bg, rgba(255, 255, 255, 0.8));
+    border: 1px solid var(--glass-border, rgba(0, 0, 0, 0.1));
+    color: var(--text-color, #111827);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+    transition: all 0.2s ease;
+}
+
+.carousel-btn:hover {
+    background: var(--color-primary);
+    color: #FFFFFF;
+    border-color: var(--color-primary);
+}
+
+.carousel-btn.prev { left: 12px; }
+.carousel-btn.next { right: 12px; }
+
+/* Indicadores / Dots */
+.carousel-dots {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    gap: 6px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 4px 10px;
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
+}
+
+.carousel-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel-dot.active {
+    background: #FFFFFF;
+    width: 16px;
+    border-radius: 8px;
+}
+
+/* CONTEÚDO DO CARD (LADO DIREITO) */
+.project-content {
+    padding: 2.2rem 2.2rem 2.2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.project-content h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text-color, #111827);
+    line-height: 1.3;
+}
+
+.project-badge {
+    background: rgba(0, 0, 0, 0.05);
+    color: var(--text-color, #111827);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    border: 1px solid var(--glass-border, rgba(0, 0, 0, 0.08));
+    white-space: nowrap;
+}
+
+.project-content p {
+    color: var(--text-muted, #4b5563);
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* STACKS / TAGS MINIMALISTAS */
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 1.8rem;
+}
+
+.project-tech span {
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid var(--glass-border, rgba(0, 0, 0, 0.08));
+    color: var(--text-color, #374151);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-weight: 500;
+}
+
+/* BOTÃO GITHUB INTEGRADO AO TEMA */
+.project-buttons {
+    margin-top: auto;
+}
+
+.btn-portfolio {
+    width: fit-content;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+/* RESPONSIVIDADE (MOBILE E TABLETS) */
+@media (max-width: 868px) {
+    .project-card {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-carousel {
+        height: 240px;
+        min-height: 240px;
+    }
+
+    .project-content {
+        padding: 1.5rem;
+    }
+
+    .btn-portfolio {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Forçar visibilidade para animações de scroll */
+#projects-container .project-card {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    visibility: visible !important;
+}

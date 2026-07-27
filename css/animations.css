@@ -1,0 +1,552 @@
+/*==================================================
+PORTFÓLIO - IGOR CRUZ
+animations.css
+==================================================*/
+
+/*==================================================
+REVEAL ANIMATIONS
+==================================================*/
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(70px);
+
+    transition:1s ease;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.reveal-left{
+
+    opacity:0;
+
+    transform:translateX(-100px);
+
+    transition:1s ease;
+
+}
+
+.reveal-left.active{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+.reveal-right{
+
+    opacity:0;
+
+    transform:translateX(100px);
+
+    transition:1s ease;
+
+}
+
+.reveal-right.active{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+/*==================================================
+FADE
+==================================================*/
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes fadeLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+@keyframes fadeRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/*==================================================
+FLOAT
+==================================================*/
+
+@keyframes floatCard{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes floatGradient{
+
+    0%{
+
+        transform:translate(0,0);
+
+    }
+
+    50%{
+
+        transform:translate(40px,-30px);
+
+    }
+
+    100%{
+
+        transform:translate(0,0);
+
+    }
+
+}
+
+/*==================================================
+PULSE
+==================================================*/
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.06);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/*==================================================
+ROTATE
+==================================================*/
+
+@keyframes rotate{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/*==================================================
+SCROLL INDICATOR
+==================================================*/
+
+@keyframes scrollMove{
+
+    0%{
+
+        opacity:0;
+
+        transform:translate(-50%,0);
+
+    }
+
+    50%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:translate(-50%,22px);
+
+    }
+
+}
+
+/*==================================================
+SHINE
+==================================================*/
+
+@keyframes shine{
+
+    from{
+
+        left:-100%;
+
+    }
+
+    to{
+
+        left:150%;
+
+    }
+
+}
+
+/*==================================================
+ZOOM
+==================================================*/
+
+@keyframes zoom{
+
+    from{
+
+        transform:scale(.85);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+/*==================================================
+LOADER
+==================================================*/
+
+@keyframes loaderSpin{
+
+    from{
+
+        transform:rotate(0);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/*==================================================
+GRADIENT
+==================================================*/
+
+@keyframes gradientMove{
+
+    0%{
+
+        background-position:0% 50%;
+
+    }
+
+    50%{
+
+        background-position:100% 50%;
+
+    }
+
+    100%{
+
+        background-position:0% 50%;
+
+    }
+
+}
+
+/*==================================================
+BLOB
+==================================================*/
+
+@keyframes blob{
+
+    0%{
+
+        border-radius:42% 58% 52% 48%;
+
+    }
+
+    25%{
+
+        border-radius:55% 45% 60% 40%;
+
+    }
+
+    50%{
+
+        border-radius:40% 60% 48% 52%;
+
+    }
+
+    75%{
+
+        border-radius:58% 42% 38% 62%;
+
+    }
+
+    100%{
+
+        border-radius:42% 58% 52% 48%;
+
+    }
+
+}
+
+/*==================================================
+GLOW
+==================================================*/
+
+@keyframes glow{
+
+    0%{
+
+        box-shadow:0 0 0 rgba(59,130,246,0);
+
+    }
+
+    50%{
+
+        box-shadow:0 0 35px rgba(59,130,246,.5);
+
+    }
+
+    100%{
+
+        box-shadow:0 0 0 rgba(59,130,246,0);
+
+    }
+
+}
+
+/*==================================================
+RIPPLE
+==================================================*/
+
+@keyframes ripple{
+
+    from{
+
+        transform:scale(0);
+
+        opacity:.7;
+
+    }
+
+    to{
+
+        transform:scale(2);
+
+        opacity:0;
+
+    }
+
+}
+
+/*==================================================
+HOVER 3D
+==================================================*/
+
+.card-3d{
+
+    transform-style:preserve-3d;
+
+    perspective:1000px;
+
+    transition:.5s;
+
+}
+
+.card-3d:hover{
+
+    transform:
+
+    rotateX(8deg)
+
+    rotateY(-8deg)
+
+    translateY(-12px);
+
+}
+
+/*==================================================
+IMAGE HOVER
+==================================================*/
+
+.image-hover{
+
+    overflow:hidden;
+
+}
+
+.image-hover img{
+
+    transition:.6s;
+
+}
+
+.image-hover:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/*==================================================
+BUTTON GLOW
+==================================================*/
+
+.btn-glow:hover{
+
+    animation:glow 1.6s infinite;
+
+}
+
+/*==================================================
+INFINITE ROTATION
+==================================================*/
+
+.rotate{
+
+    animation:rotate 12s linear infinite;
+
+}
+
+/*==================================================
+FLOATING
+==================================================*/
+
+.float{
+
+    animation:floatCard 6s ease-in-out infinite;
+
+}
+
+/*==================================================
+BLINK
+==================================================*/
+
+@keyframes blink{
+
+    50%{
+
+        opacity:0;
+
+    }
+
+}
+
+.typing-cursor{
+
+    animation:blink .8s infinite;
+
+}
+
+/*==================================================
+SCROLL BAR
+==================================================*/
+
+#progress-bar{
+
+    transition:width .15s linear;
+
+}
