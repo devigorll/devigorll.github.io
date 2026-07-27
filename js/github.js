@@ -91,8 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const slidesHtml = project.images.map((imgUrl, imgIndex) => `
                 <div class="carousel-slide ${imgIndex === 0 ? 'active' : ''}">
-                    <img src="${imgUrl}" alt="${project.title}" onerror="this.src='assets/images/foto01.jpeg'">
-                </div>
+                    <img src="${imgUrl}" alt="${project.title}" onerror="this.onerror=null; this.src='assets/images/perfil/foto01.jpeg';">                </div>
             `).join("");
 
             const dotsHtml = project.images.map((_, imgIndex) => `
