@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!projectsContainer) return;
 
     const defaultStacks = [
-        "SQL Server", "Python", "Pandas", "NumPy", "Faker", 
+        "SQL Server", "Python", "Pandas", "NumPy", "Faker",
         "Matplotlib", "Seaborn", "Power BI", "Streamlit", "GitHub"
     ];
 
@@ -42,8 +42,12 @@ document.addEventListener("DOMContentLoaded", () => {
             description: "O Help Desk é um sistema desenvolvido para centralizar e gerenciar chamados de suporte técnico, proporcionando maior organização e acompanhamento em tempo real.",
             githubUrl: "https://github.com/devigorll/help_desk",
             images: [
-                "assets/images/projects/helpdesk-1.png",
-                "assets/images/projects/helpdesk-2.png"
+                "assets/images/help_desk_p/stream_help_desk.png",
+                "assets/images/help_desk_p/app_help_desk.png",
+                "assets/images/help_desk_p/readme_help_desk.png",
+                "assets/images/help_desk_p/banco_help_desk.png",
+                "assets/images/help_desk_p/codigo_help_desk.png",
+                "assets/images/help_desk_p/funcoes.png"
             ],
             stacks: defaultStacks
         },
@@ -53,8 +57,9 @@ document.addEventListener("DOMContentLoaded", () => {
             description: "O Smart Stock utiliza Ciência de Dados e modelos preditivos para automatizar o controle de inventário, antecipando demandas e otimizando níveis de estoque.",
             githubUrl: "https://github.com/devigorll/smart_stock",
             images: [
-                "assets/images/projects/smart-stock-1.png",
-                "assets/images/projects/smart-stock-2.png"
+                "assets/images/smart_stock_p/app_smart.png",
+                "assets/images/smart_stock_p/banco_smart.png",
+                "assets/images/smart_stock_p/funcoes_smart.png"
             ],
             stacks: defaultStacks
         },
@@ -64,8 +69,8 @@ document.addEventListener("DOMContentLoaded", () => {
             description: "Projeto desenvolvido como trabalho final para a disciplina de Estrutura de Dados no 2º semestre do curso de Ciência de Dados na FATEC Jundiaí.",
             githubUrl: "https://github.com/devigorll/analise_brasileirao",
             images: [
-                "assets/images/projects/brasileirao-1.png",
-                "assets/images/projects/brasileirao-2.png"
+                "assets/images/analise_brasileirao/app_brasileirao.png",
+                "assets/images/analise_brasileirao/codigo_analise_01.png"
             ],
             stacks: defaultStacks
         },
@@ -75,8 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
             description: "Repositório dedicado a estudos, projetos e desafios de Ciência de Dados utilizando Python, Pandas, Matplotlib, Seaborn e outras bibliotecas.",
             githubUrl: "https://github.com/devigorll/cursocienciadedados",
             images: [
-                "assets/images/projects/estudos-1.png",
-                "assets/images/projects/estudos-2.png"
+                "assets/images/estudos_data_science/estudo_perfil.jpg"
             ],
             stacks: defaultStacks
         }
@@ -87,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         projectsData.forEach((project, index) => {
             const card = document.createElement("div");
-            card.className = "project-card reveal active-reveal"; 
+            card.className = "project-card reveal active-reveal";
 
             const slidesHtml = project.images.map((imgUrl, imgIndex) => `
                 <div class="carousel-slide ${imgIndex === 0 ? 'active' : ''}">
