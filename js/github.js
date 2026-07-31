@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
             description: "O Help Desk é um sistema desenvolvido para centralizar e gerenciar chamados de suporte técnico, proporcionando maior organização e acompanhamento em tempo real.",
             githubUrl: "https://github.com/devigorll/help_desk",
             images: [
-                "assets/images/help_desk_p/stream_help_desk.png",
+                "assets/images/help_desk_p/inicio_helpdesk.png",
                 "assets/images/help_desk_p/app_help_desk.png",
                 "assets/images/help_desk_p/readme_help_desk.png",
                 "assets/images/help_desk_p/banco_help_desk.png",
