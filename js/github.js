@@ -8,7 +8,31 @@ document.addEventListener("DOMContentLoaded", () => {
         "Matplotlib", "Seaborn", "Power BI", "Streamlit", "GitHub"
     ];
 
+    const defaultStacks2 = [
+        "SQL Server", "Python", "FastAPI", "SQLAlchemy", "Jupyter Notebooks"
+    ];
+
+
+
     const projectsData = [
+
+        {
+            title: "Trooper API - API REST",
+            badge: "Back-end",
+            description: "Desenvolvido em FastAPI, este projeto disponibiliza uma API REST eficiente para automatizar o gerenciamento completo (CRUD) e o controle operacional do contingente de Stormtroopers.",
+            githubUrl: "https://github.com/devigorll/trooper_API",
+            images: [
+                "assets/images/trooperAPI/fastAPI.png",
+                "assets/images/trooperAPI/services.png",
+                "assets/images/trooperAPI/zap.jpeg",
+                "assets/images/trooperAPI/criartrooper.png",
+                "assets/images/trooperAPI/github.png",
+                "assets/images/trooperAPI/notebook.png",
+
+            ],
+            stacks: defaultStacks2
+        },
+
         {
             title: "People Analytics - Análise Atrito",
             badge: "Data Science",
