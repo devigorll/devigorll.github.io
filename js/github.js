@@ -12,6 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
         "SQL Server", "Python", "FastAPI", "SQLAlchemy", "Jupyter Notebooks"
     ];
 
+    const defaultStacks3 = [
+        "SQL Server", "Python", "FastAPI", "SQLAlchemy", "Jupyter Notebooks"
+    ];
 
 
     const projectsData = [
@@ -32,6 +35,28 @@ document.addEventListener("DOMContentLoaded", () => {
             ],
             stacks: defaultStacks2
         },
+
+         {
+            title: "NexumLog",
+            badge: "Python & N8N",
+            description: "Este projeto integra banco de dados relacional, automação via webhooks e scripts em Python para monitorar em tempo real o status de entregas e otimizar fluxos logísticos.",
+            githubUrl: "https://github.com/devigorll/nexumlog",
+            images: [
+                "assets/images/nexumlog/workflow.png",
+                "assets/images/nexumlog/schema_supabase.png",
+                "assets/images/nexumlog/javascript.png",
+                "assets/images/nexumlog/email_pedido.png",
+                "assets/images/nexumlog/relatorio_atrasados.png",
+                "assets/images/nexumlog/relatorio_estoque.png"
+
+
+            ],
+            stacks: defaultStacks
+        },
+
+
+
+
 
         {
             title: "People Analytics - Análise Atrito",
