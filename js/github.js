@@ -16,6 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
         "SQL Server", "Python", "FastAPI", "SQLAlchemy", "Jupyter Notebooks"
     ];
 
+    const defaultStacks4 = [
+        "Supabase", "Postgree", "JavaScript", "HTML", "CSS", "Vercel", "Claude"
+    ];
+
 
     const projectsData = [
 
@@ -54,7 +58,23 @@ document.addEventListener("DOMContentLoaded", () => {
             stacks: defaultStacks
         },
 
+        {
+            title: "Hibook - Sistema de Gestão de Livraria",
+            badge: "Back-end",
+            description: "O HiBook é uma aplicação web moderna e minimalista desenvolvida por Igor Cruz, criada para transformar a forma como você organiza, cataloga e acompanha suas leituras pessoais. Inspirado na fluidez e no apelo visual do feed do Pinterest, o projeto une design limpo e alta performance para entregar uma experiência imersiva aos leitores.",
+            githubUrl: "https://github.com/devigorll/hibook",
+            images: [
+                "assets/images/hibook/tela_inicial.png",
+                "assets/images/hibook/login.png",
+                "assets/images/hibook/schema.png",
+                "assets/images/hibook/responsividade.png",
+                "assets/images/hibook/vercel.png",
+                "assets/images/hibook/des_livro.png"
 
+
+            ],
+            stacks: defaultStacks4
+        },
 
 
 
